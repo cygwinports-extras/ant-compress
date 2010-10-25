@@ -1,0 +1,11 @@
+JAVA_CLASSPATH="commons-compress.jar"
+inherit ant
+
+DESCRIPTION="Ant task to handle additional archive formats"
+HOMEPAGE="http://ant.apache.org/antlibs/compress/index.html"
+SRC_URI="mirror://apache/ant/antlibs/${PN#ant-}/source/apache-${P}-src.tar.bz2"
+SRC_DIR="apache-${P}"
+
+ANT_BUILD_TARGETS="antlib javadoc"
+ANT_INSTALL_TASKS="build/lib/*.jar"
+ANT_INSTALL_JAVADOC="build/javadoc"
