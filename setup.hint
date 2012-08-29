@@ -1,5 +1,0 @@
-category: Devel Java
-requires: ant java-commmons-compress
-sdesc: "Ant task to handle additional archive formats"
-ldesc: "The compress library offers tasks and types for additional 
-archive formats like CPIO and AR supported by Apache Commons Compress."

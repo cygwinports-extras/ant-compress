@@ -1,0 +1,18 @@
+JAVA_CLASSPATH="commons-compress.jar"
+inherit ant
+
+CATEGORY="Java"
+SUMMARY="Ant task to handle additional archive formats"
+DESCRIPTION="The Apache Compress Antlib contains tasks and resources that
+provide compression/uncompression and archival/unarchival capabilities based
+on Apache Commons Compress."
+HOMEPAGE="http://ant.apache.org/antlibs/compress/index.html"
+SRC_URI="mirror://apache/ant/antlibs/${PN#ant-}/source/apache-${P}-src.tar.bz2"
+SRC_DIR="apache-${P}"
+
+# java.util.jar.Pack200 is absent from GNU Classpath
+DISTCLEANFILES="src/main/org/apache/ant/compress/*/*Pack200*"
+
+ANT_BUILD_TARGETS="antlib javadoc"
+ANT_INSTALL_TASKS="build/lib/*.jar"
+ANT_INSTALL_JAVADOC="build/javadoc"
